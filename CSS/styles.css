@@ -1,0 +1,336 @@
+/* RESET */
+* {
+	margin:0;
+	padding:0;
+	color:inherit;
+	text-decoration:none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body {
+	position:relative;
+	min-height: 100vh;
+    width:100vw;
+}
+/* ESTRUCTURA GRAL */
+header {
+    grid-area: header;
+
+}
+.claro{
+    height:20vh;
+    width:62vw;
+    background:#016D9C;
+    border-radius:0 0 360px 360px;
+    margin-right: 19vw;
+    margin-left:19vw;
+    border: 0.5vh solid black;
+    border-top: none;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    justify-content: space-around;
+    overflow:hidden;
+}
+.oscuro{
+    height:20vh;
+    width:100vw;
+    background:#002B44;
+    overflow:hidden;
+    border-bottom: 0.5vh solid black;
+}
+.logo{
+    padding-top:3.5vh;
+    font-size: 2vw;
+    font-family: 'IBM Plex Serif', serif;
+    color:#e7e0cc;
+    letter-spacing:2px;
+    text-shadow:
+    0 0 1.5px #000,
+    -1.5px -1.5px 0 #000,  
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+}
+.menu{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-right:30vw;
+}
+.menu a {
+    margin: 0 2vw;
+    font-size: 1vw;
+    list-style: none;
+    text-decoration:none;
+    color:#c7839c;
+    font-family: 'Recursive', sans-serif;
+    text-shadow:
+    0 0 1px #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+footer{
+    width:100vw;
+    border-top: .5vh solid black;
+    height:20vh;
+    background-color:#002B44;
+    display:flex;
+    flex-direction:column;
+}
+main{
+    width:100vw;
+    background:#e7e0cc;
+    height:60vh;
+
+}
+/*FOOTER GRAL*/
+.socialCont{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding-left: 35vw;
+    padding-right:35vw;
+}
+.social2{
+    height:8vh;
+    width:auto;
+}
+footer p{
+    font-size:2vh;
+    color: #e7e0cc;
+    text-align:center;
+    margin-bottom:3vh;
+    margin-top:3vh;
+    font-family: 'Recursive', sans-serif;
+}
+/*INDEX*/
+.indexGrid {
+    display:grid;
+    grid-template-rows: 60vh 98.25vh;
+    grid-template-areas: "index"
+                         "footer";
+}
+#index {
+    background-image: url(../media/fondo1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; 
+    grid-area: index;
+    height:60vh;
+}
+#heroSlogan {
+    height:50%;
+    width:100vw;
+    display: flex;
+    justify-content:center;
+}
+@keyframes slogan{
+    0% {opacity: 0%;}
+    25% {opacity: 25%}
+    50% {opacity: 50%}
+    75% {opacity: 75%}
+    100% {opacity: 100%}
+}
+@keyframes buttons{
+    0% {opacity: 0%;}
+    25% {opacity: 0%}
+    50% {opacity: 0%}
+    55% {opacity: 25%}
+    75% {opacity: 50%}
+    95% {opacity: 75%}
+    100% {opacity: 100%}
+}
+
+.slogan {
+    margin-top: 10vh;
+    color:#c7839c;
+    font-family: 'IBM Plex Serif', serif;
+    letter-spacing: 0.2vw;
+    font-weight: 10vh;
+    font-size: 5vh;
+      text-shadow:
+   0 0 1.5px #000,
+   -1.5px -1.5px 0 #000,  
+   1.5px -1.5px 0 #000,
+   -1.5px 1.5px 0 #000,
+   1.5px 1.5px 0 #000;
+   animation: slogan;
+   animation-duration: 3s;
+}
+#heroButtons {
+    height:50%;
+    width:100vw;
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    animation: buttons;
+    animation-duration:5s;
+}
+#button1 {
+    text-decoration: none;
+    grid-column-start:2;
+    grid-row-start:1;
+    justify-self: center;
+    
+}
+#button2 {
+    text-decoration: none;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    justify-self: start;
+}
+.button {
+    align-self:center;
+    font-size:1.8vh;
+    background-color:#002b44;
+    border: 0.5vh solid black;
+    border-radius: 180px;
+    transition: background-color .5s;
+    color: #e7e0cc;
+    font-family: 'Recursive', sans-serif;
+    margin-bottom: 10vh;
+    padding: 2vh 4vw;
+    text-align:center;
+}
+.button:hover {
+    background-color:#c7839c;
+    transition: background-color .5s;
+    color: black;
+}
+.footIndex {
+    grid-area:foot;
+    background:#002b44;
+    border-bottom: .5vh solid black;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.footIndex p {
+    font-size:6vh;
+    color:#e7e0cc;
+    font-family: 'Recursive', sans-serif;
+}
+.backgroundIndex {
+    background-image: url(../media/footer.jpg);
+    grid-area: footImg;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 100px;
+    background-position-x: -100px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding-left: 20vw;
+    padding-right:20vw;
+}
+.social{
+    height: 15vh;
+    width:auto;
+}
+.indxFooter{
+    height:auto;
+    grid-area: footer;
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "foot"
+                        "footImg";
+}
+/* Contacto*/
+form{
+    display:flex;
+    height:100%;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    overflow:scroll;
+}
+.formCont{
+    margin-left: 1vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:20vw;
+    color:black;
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.5vh;
+}
+label{
+    margin-bottom:1vh;
+}
+input {
+    margin-bottom:1vh;
+}
+.newsletter{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.newsletter input{
+    margin:0;
+}
+.formButtons{ 
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.formButtons input{
+    height: 2.5vh;
+    width:6vw;
+    margin-left: 1vw;
+    margin-right:1vw;
+    font-size:1.5vh;
+}
+/*servicios*/
+.intro, .ai, .ac{
+    text-align: center;
+    color:#002b44;
+}
+.intro {
+    margin-bottom: 10vh;
+    font-size:2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:600;
+}
+.intro h2{
+    font-size: 3.5vh;
+    margin-bottom: 2vh;
+    padding-top:2vh;
+    font-weight:900;
+}
+.ai, .ac {
+    margin-bottom: 3vh;
+    text-align:center;
+    font-size: 1.7vh;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.ai p, .ac p {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:600;
+}
+.ai h3, .ac h3 {
+    font-size:2.5vh;
+    margin-bottom: 1.5vh;
+    font-weight:800;
+}
+/* ENCONTRANOS */
+.fu {
+    text-align: center;
+    padding-top:6vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#002b44;
+}
+.map {
+    position: absolute;
+    left:42vw;
+    margin-top: 5vh;
+}
