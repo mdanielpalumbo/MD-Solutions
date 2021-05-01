@@ -30,13 +30,11 @@ header {
     flex-flow: column nowrap;
     align-items:center;
     justify-content: space-around;
-    overflow:hidden;
 }
 .oscuro{
     height:20vh;
     width:100vw;
     background:#002B44;
-    overflow:hidden;
     border-bottom: 0.5vh solid black;
 }
 .logo{
@@ -60,8 +58,7 @@ header {
     margin-left: 30vw;
     margin-right:30vw;
 }
-.menu a {
-    margin: 0 2vw;
+.menu .navItem {
     font-size: 1vw;
     list-style: none;
     text-decoration:none;
@@ -73,6 +70,13 @@ header {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+.bckg {
+    background-color:#002b44;
+    border: 2px solid black;
+}
+.dropdown-item:hover {
+    background-color: #016D9C;
 }
 footer{
     width:100vw;
@@ -113,7 +117,7 @@ footer p{
     display:grid;
     grid-template-rows: 60vh 98.25vh;
     grid-template-areas: "index"
-                         "footer";
+                        "footer";
 }
 #index {
     background-image: url(../media/fondo1.jpg);
