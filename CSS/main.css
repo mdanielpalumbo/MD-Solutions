@@ -1,0 +1,47 @@
+.main-est {
+  height: 60vh;
+  overflow: scroll; }
+  .main-est .main-est__row {
+    height: 100%;
+    overflow: hidden; }
+    .main-est .main-est__row .row__col {
+      padding: 0; }
+      .main-est .main-est__row .row__col #col__carousel1 {
+        height: 100%; }
+        .main-est .main-est__row .row__col #col__carousel1 .carousel-inner {
+          height: 100%; }
+          .main-est .main-est__row .row__col #col__carousel1 .carousel-inner .carousel-item {
+            height: 100%; }
+            .main-est .main-est__row .row__col #col__carousel1 .carousel-inner .carousel-item img {
+              height: auto;
+              width: 100%; }
+      .main-est .main-est__row .row__col #col__carousel2 {
+        height: 100%; }
+        .main-est .main-est__row .row__col #col__carousel2 .carousel-inner {
+          height: 100%; }
+          .main-est .main-est__row .row__col #col__carousel2 .carousel-inner .carousel-item {
+            height: 100%; }
+            .main-est .main-est__row .row__col #col__carousel2 .carousel-inner .carousel-item img {
+              height: auto;
+              width: 100%; }
+      .main-est .main-est__row .row__col #col__carousel3 {
+        height: 100%; }
+        .main-est .main-est__row .row__col #col__carousel3 .carousel-inner {
+          height: 100%; }
+          .main-est .main-est__row .row__col #col__carousel3 .carousel-inner .carousel-item {
+            height: 100%; }
+            .main-est .main-est__row .row__col #col__carousel3 .carousel-inner .carousel-item img {
+              height: auto;
+              width: 100%; }
+      .main-est .main-est__row .row__col .col__est-desc {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2vw;
+        font-family: 'Recursive', sans-serif;
+        background-color: #686765; }
+  .main-est .reglaH {
+    border-bottom: .5vh solid black; }
+  .main-est .reglaV {
+    border-right: .5vh solid black; }

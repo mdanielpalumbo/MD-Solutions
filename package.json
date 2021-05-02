@@ -1,0 +1,25 @@
+{
+  "name": "md-solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss SCSS/styles.scss CSS/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdanielpalumbo/MD-Solutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdanielpalumbo/MD-Solutions/issues"
+  },
+  "homepage": "https://github.com/mdanielpalumbo/MD-Solutions#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
