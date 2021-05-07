@@ -24,7 +24,7 @@ header {
     border-radius:0 0 360px 360px;
     margin-right: 19vw;
     margin-left:19vw;
-    border: 0.5vh solid black;
+    border: 5px solid black;
     border-top: none;
     display:flex;
     flex-flow: column nowrap;
@@ -35,7 +35,7 @@ header {
     height:20vh;
     width:100vw;
     background:#002B44;
-    border-bottom: 0.5vh solid black;
+    border-bottom: 5px solid black;
 }
 .logo{
     padding-top:3.5vh;
@@ -67,7 +67,7 @@ header {
     font-size: 2vh;
     list-style: none;
     text-decoration:none;
-    color:#c7839c;
+    color:white;
     font-family: 'Recursive', sans-serif;
     text-shadow:
     0 0 1px #000,
@@ -89,7 +89,7 @@ header {
 }
 footer{
     width:100vw;
-    border-top: .5vh solid black;
+    border-top: 5px solid black;
     height:20vh;
     background-color:#002B44;
     display:flex;
@@ -135,7 +135,7 @@ footer p{
     flex-direction: column; 
     grid-area: index;
     height:78.25vh;
-    border-bottom:0.5vh solid black;
+    border-bottom:5px solid black;
 }
 #heroSlogan {
     height:50%;
@@ -193,7 +193,7 @@ footer p{
     align-items: center;
     font-size:2vh;
     background-color:#002b44;
-    border: 0.5vh solid black;
+    border: 5px solid black;
     border-radius: 180px;
     transition: background-color .75s;
     color: #e7e0cc;
@@ -222,7 +222,7 @@ footer p{
 .footIndex {
     grid-area:foot;
     background:#002b44;
-    border-bottom: .5vh solid black;
+    border-bottom: 5px solid black;
     display: flex;
     justify-content:center;
     flex-direction: column;
