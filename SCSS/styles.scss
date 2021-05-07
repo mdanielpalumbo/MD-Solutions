@@ -1,8 +1,9 @@
 $bg: #e7e0cc;
-
+$h: 562px;
+$p: 10px;
 
 .main-est {
-    height:562px;
+    height:$h;
     overflow:scroll;
     overflow-x:hidden;
         .col__est-desc {
@@ -10,7 +11,7 @@ $bg: #e7e0cc;
             background-color: $bg;
             text-align: center;
             align-items:center;
-            padding:10px;
+            padding:$p;
         }
     img {
         height:100%;
