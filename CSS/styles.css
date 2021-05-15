@@ -7,15 +7,18 @@
 	list-style: none;
 	box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    display:none;
+}
 body {
 	position:relative;
 	min-height: 100vh;
-    width:100vw;
+    max-width:100%;
+    width:100%;
 }
 /* ESTRUCTURA GRAL */
 header {
     grid-area: header;
-
 }
 .claro{
     height:20vh;
@@ -29,7 +32,6 @@ header {
     display:flex;
     flex-flow: column nowrap;
     align-items:center;
-    justify-content: space-around;
 }
 .oscuro{
     height:20vh;
@@ -38,8 +40,7 @@ header {
     border-bottom: 5px solid black;
 }
 .logo{
-    padding-top:3.5vh;
-    font-size: 2vw;
+    font-size: 2.7vw;
     font-family: 'IBM Plex Serif', serif;
     color:#e7e0cc;
     letter-spacing:2px;
@@ -54,31 +55,22 @@ header {
 .logo:hover{
     color:#e7e0cc;
 }
-
-.menu{
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content: space-around;
-    width: 40vw;
-    margin-left: 30vw;
-    margin-right:30vw;
+.navConfig {
+    flex-direction:row;
+    width:32vw;
+    justify-content:space-evenly;
 }
 .navItem {
-    font-size: 2vh;
+    font-size: 0.8vw;
     list-style: none;
     text-decoration:none;
-    color:white;
+    color:white !important;
     font-family: 'Recursive', sans-serif;
-    text-shadow:
-    0 0 1px #000,
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    font-weight: 300;
 }
 .navItem:hover {
-    font-size: 2.1vh;
-    color: #c7839c;
+    font-size: 0.85vw !important;
+    color: #c7839c !important;
 }
 .bckg {
     background-color:#002b44;
@@ -123,7 +115,7 @@ footer p{
 /*INDEX*/
 .indexGrid {
     display:grid;
-    grid-template-rows: 78.25vh 98.25vh;
+    grid-template-rows: 80vh 100vh;
     grid-template-areas: "index"
                         "footer";
 }
@@ -134,7 +126,7 @@ footer p{
     display: flex;
     flex-direction: column; 
     grid-area: index;
-    height:78.25vh;
+    height:80vh;
     border-bottom:5px solid black;
 }
 #heroSlogan {
@@ -159,7 +151,7 @@ footer p{
 }
 
 .slogan {
-    margin-top: 18vh;
+    margin-top: 14vh;
     color:#c7839c;
     font-family: 'IBM Plex Serif', serif;
     letter-spacing: 0.2vw;
@@ -174,7 +166,6 @@ footer p{
     animation: slogan;
     animation-duration: 1s;
 }
-
 #heroButtons {
     height:50%;
     width:60vw;
@@ -193,7 +184,7 @@ footer p{
     align-items: center;
     font-size:2vh;
     background-color:#002b44;
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius: 180px;
     transition: background-color .75s;
     color: #e7e0cc;
@@ -204,7 +195,6 @@ footer p{
     margin-bottom:20vh;
     height:7vh;
     width:12vw;
-
 }
 .button:hover {
     background-color:#c7839c;
@@ -212,7 +202,7 @@ footer p{
     color: black;
 }
 .indxFooter{
-    height:98.25vh;
+    height:100vh;
     grid-area: footer;
     display:grid;
     grid-template-rows: 35% 65%;
@@ -228,11 +218,11 @@ footer p{
     flex-direction: column;
 }
 .footIndex p {
-    font-size:6vh;
+    font-size:4vh;
     color:#e7e0cc;
     font-family: 'Recursive', sans-serif;
+    width:100%
 }
-
 .backgroundIndex {
     background-image: url(../media/footer.jpg);
     grid-area: footImg;
@@ -247,40 +237,48 @@ footer p{
 .social{
     height: 15vh;
     width:auto;
+    margin:2vw;
 }
-
 /* Contacto*/
 form{
     display:flex;
-    height:100%;
-    flex-direction:column;
+    flex-flow: column nowrap;
     justify-content:space-around;
     align-items: center;
     overflow:scroll;
+    padding-top: 1vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: auto;
 }
 .formCont{
     margin-left: 1vw;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    width:20vw;
     color:black;
     font-family: 'Recursive', sans-serif;
     font-size: 1.5vh;
+    width: 40vw;
 }
 label{
-    margin-bottom:1vh;
+    margin-bottom:0.5vh;
+    margin-top: 0.5vh;
 }
 input {
-    margin-bottom:1vh;
+    margin-top:0.5vh;
+    margin-bottom:0.5vh;;
 }
 .newsletter{
     display:flex;
     flex-direction: row;
     justify-content:space-between;
+    margin-top:0.5vh;
+    margin-bottom:0.5vh;
 }
 .newsletter input{
-    margin:0;
+    margin-top:0.9vh;
+    margin-left:1vw;
 }
 .formButtons{ 
     display:flex;
@@ -289,10 +287,11 @@ input {
 }
 .formButtons input{
     height: 2.5vh;
-    width:6vw;
     margin-left: 1vw;
     margin-right:1vw;
-    font-size:1.5vh;
+    font-size:1.3vh;
+    text-align:center;
+    padding:2px;
 }
 /*servicios*/
 .intro, .ai, .ac{
@@ -300,7 +299,7 @@ input {
     color:#002b44;
 }
 .intro {
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     font-size:2vh;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -331,14 +330,25 @@ input {
     font-weight:800;
 }
 /* ENCONTRANOS */
-.fu {
-    text-align: center;
-    padding-top:6vh;
-    font-family: 'Source Sans Pro', sans-serif;
-    color:#002b44;
-}
 .map {
-    position: absolute;
-    left:42vw;
-    margin-top: 5vh;
+    position:absolute;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items: center;
+    width:100vw;
+    
+}
+
+.fu {
+    position:relative;
+    z-index:2;
+}
+
+.map iframe {
+    position:absolute;
+    top:0;
+    z-index:1;
+    width:100%;
+    height:60vh;
 }

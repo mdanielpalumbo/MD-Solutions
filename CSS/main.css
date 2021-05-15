@@ -1,17 +1,22 @@
+::-webkit-scrollbar {
+  display: none; }
+
 .main-est {
-  height: 562px;
+  height: 60vh;
   overflow: scroll;
-  overflow-x: hidden; }
+  overflow-x: auto; }
   .main-est .col__est-desc {
+    font-size: 1vw;
     font-family: 'Recursive', sans-serif;
     background-color: #e7e0cc;
     text-align: center;
     align-items: center;
     padding: 10px; }
-  .main-est img {
-    height: 100%;
-    width: auto; }
   .main-est .reglaH {
     border-bottom: 5px solid black; }
   .main-est .reglaV {
     border-right: 5px solid black; }
+
+img {
+  height: 59.5vh;
+  width: 100%; }

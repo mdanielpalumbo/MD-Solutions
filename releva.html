@@ -8,30 +8,51 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Recursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class = "oscuro">
-            <div class = "claro">
-                <a class="logo" href="index.html">MD SOLUTIONS</a>
-                <ul class="menu">
-                    <li><a class ="navItem" href="index.html">Home</a></li>
-                    <div class = "dropdown">
-                        <a class = "dropdown-toggle navItem" role = "button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Servicios</a>
-                        <ul class = "dropdown-menu bckg" aria-labelledby="dropdownMenuLink">
-                            <li><a class ="dropdown-item navItem" href="acusti.html"> Acustización</a></li>
-                            <li><a class ="dropdown-item navItem" href="releva.html">Relevamientos</a></li>
+            <div class = "claro container justify-content-center">
+                <a class="logo mb-3" href="index.html">MD SOLUTIONS</a>
+                <nav class = "navbar navbar-expand-lg navConfig p-0 m-0">
+                    <div class="container-fluid p-0 m-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav navConfig p-0 m-0">
+                            <li class="nav-item p-0">
+                                <a href="index.html" class="nav-link navItem">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="index.html" id="navbarDropdown" role="button" class="nav-link navItem dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                                <ul class="dropdown-menu bckg" aria labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item navItem" href="acusti.html">Acustización</a></li>
+                                    <li><a href="releva.html" class="dropdown-item navItem">Relevamientos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="estudios.html" aria-current="page" class="nav-link navItem active">Estudios</a>
+                            </li>                                
+                            <li class="nav-item">
+                                <a href="encontranos.html" class="nav-link navItem">Encontranos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link navItem">Contacto</a>
+                            </li>
                         </ul>
                     </div>
-                    <li><a class ="navItem" href="estudios.html">Estudios</a></li>
-                    <li><a class ="navItem" href="encontranos.html">Encontranos</a></li>
-                    <li><a class ="navItem" href="contacto.html">Contacto</a></li>
-                </ul>
+                </nav>
             </div>
         </div>
     </header>
     <main>
+        <section class = "intro">
+            <h2>
+                Relevamientos
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cum id voluptatibus ipsum sunt at aspernatur quam enim repellendus hic vitae eius perferendis, consequuntur accusantium reiciendis excepturi nihil vel itaque!
+            </p>
+        </section>
     </main>
     <footer>
         <p>Nos respaldan nuestros trabajos, mira más en nuestras redes</p>
