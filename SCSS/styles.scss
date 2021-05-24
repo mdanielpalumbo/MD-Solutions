@@ -1,13 +1,12 @@
 $bg: #e7e0cc;
 $p: 10px;
-
 ::-webkit-scrollbar {
     display:none;
 }
 .main-est {
     height:60vh;
     overflow:scroll;
-    overflow-x:auto;
+    overflow-x:hidden;
         .col__est-desc {
             font-size:1vw;
             font-family: 'Recursive', sans-serif;
@@ -16,15 +15,15 @@ $p: 10px;
             align-items:center;
             padding:$p;
         }
-    
     .reglaH {
         border-bottom: 5px solid black;
+        overflow:hidden;
     }
     .reglaV {
         border-right: 5px solid black;
+        overflow:hidden;
     }
 }
-
 img {
     height: 59.5vh;
     width: 100%;

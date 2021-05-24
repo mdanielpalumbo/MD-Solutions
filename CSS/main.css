@@ -4,7 +4,7 @@
 .main-est {
   height: 60vh;
   overflow: scroll;
-  overflow-x: auto; }
+  overflow-x: hidden; }
   .main-est .col__est-desc {
     font-size: 1vw;
     font-family: 'Recursive', sans-serif;
@@ -13,9 +13,11 @@
     align-items: center;
     padding: 10px; }
   .main-est .reglaH {
-    border-bottom: 5px solid black; }
+    border-bottom: 5px solid black;
+    overflow: hidden; }
   .main-est .reglaV {
-    border-right: 5px solid black; }
+    border-right: 5px solid black;
+    overflow: hidden; }
 
 img {
   height: 59.5vh;

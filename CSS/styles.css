@@ -7,6 +7,9 @@
 	list-style: none;
 	box-sizing: border-box;
 }
+html {
+    font-size: 16px;
+}
 ::-webkit-scrollbar {
     display:none;
 }
@@ -15,6 +18,7 @@ body {
 	min-height: 100vh;
     max-width:100%;
     width:100%;
+    overflow-x:hidden;
 }
 /* ESTRUCTURA GRAL */
 header {
@@ -32,6 +36,7 @@ header {
     display:flex;
     flex-flow: column nowrap;
     align-items:center;
+    position:relative;
 }
 .oscuro{
     height:20vh;
@@ -40,6 +45,7 @@ header {
     border-bottom: 5px solid black;
 }
 .logo{
+    top:2.5vh;
     font-size: 2.7vw;
     font-family: 'IBM Plex Serif', serif;
     color:#e7e0cc;
@@ -51,6 +57,7 @@ header {
     -1.5px 1.5px 0 #000,
     1.5px 1.5px 0 #000;
     text-decoration:none;
+    position:absolute;
 }
 .logo:hover{
     color:#e7e0cc;
@@ -59,6 +66,10 @@ header {
     flex-direction:row;
     width:32vw;
     justify-content:space-evenly;
+    margin: 0;
+    padding:0;
+    position:absolute;
+    bottom:1vh;
 }
 .navItem {
     font-size: 0.8vw;
@@ -75,13 +86,14 @@ header {
 .bckg {
     background-color:#002b44;
     border: 2px solid black;
+    border-radius: 15px;
 }
 .dropdown-item:hover {
     background-color: #016D9C;
 }
 footer{
     width:100vw;
-    border-top: 5px solid black;
+    border-top: 2.5px solid black;
     height:20vh;
     background-color:#002B44;
     display:flex;
@@ -127,7 +139,7 @@ footer p{
     flex-direction: column; 
     grid-area: index;
     height:80vh;
-    border-bottom:5px solid black;
+    border-bottom:2.5px solid black;
 }
 #heroSlogan {
     height:50%;
@@ -149,7 +161,6 @@ footer p{
     75% {opacity: 75%}
     100% {opacity: 100%}
 }
-
 .slogan {
     margin-top: 14vh;
     color:#c7839c;
@@ -200,6 +211,7 @@ footer p{
     background-color:#c7839c;
     transition: background-color .5s;
     color: black;
+    border: 3px solid white;
 }
 .indxFooter{
     height:100vh;
@@ -278,12 +290,12 @@ input {
 }
 .newsletter input{
     margin-top:0.9vh;
-    margin-left:1vw;
 }
 .formButtons{ 
     display:flex;
     flex-direction: row;
     justify-content:center;
+    padding:2vh;
 }
 .formButtons input{
     height: 2.5vh;
@@ -332,23 +344,24 @@ input {
 /* ENCONTRANOS */
 .map {
     position:absolute;
-    display:flex;
     flex-flow:column nowrap;
-    justify-content:center;
-    align-items: center;
     width:100vw;
-    
+    height:60vh;
 }
-
 .fu {
     position:relative;
+    top: 0;
     z-index:2;
+    text-align:center;
+    font-size: 1.5vw;
+    padding-top: 0.8vh;
+    font-weight:bold;
 }
-
 .map iframe {
     position:absolute;
     top:0;
     z-index:1;
     width:100%;
-    height:60vh;
+    height:100%;
 }
+
