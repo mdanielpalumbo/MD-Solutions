@@ -37,6 +37,7 @@ header {
     flex-flow: column nowrap;
     align-items:center;
     position:relative;
+    justify-content:space-evenly;
 }
 .oscuro{
     height:20vh;
@@ -45,8 +46,6 @@ header {
     border-bottom: 5px solid black;
 }
 .logo{
-    top:2.5vh;
-    font-size: 2.7vw;
     font-family: 'IBM Plex Serif', serif;
     color:#e7e0cc;
     letter-spacing:2px;
@@ -57,32 +56,25 @@ header {
     -1.5px 1.5px 0 #000,
     1.5px 1.5px 0 #000;
     text-decoration:none;
-    position:absolute;
 }
 .logo:hover{
     color:#e7e0cc;
 }
 .navConfig {
     flex-direction:row;
-    width:32vw;
+    width:31vw;
     justify-content:space-evenly;
     margin: 0;
     padding:0;
-    position:absolute;
-    bottom:1vh;
 }
 .navItem {
-    font-size: 0.8vw;
     list-style: none;
     text-decoration:none;
     color:white !important;
     font-family: 'Recursive', sans-serif;
     font-weight: 300;
 }
-.navItem:hover {
-    font-size: 0.85vw !important;
-    color: #c7839c !important;
-}
+
 .bckg {
     background-color:#002b44;
     border: 2px solid black;
@@ -193,7 +185,6 @@ footer p{
     display:flex;
     justify-content:center;
     align-items: center;
-    font-size:2vh;
     background-color:#002b44;
     border: 3px solid black;
     border-radius: 180px;
@@ -206,6 +197,7 @@ footer p{
     margin-bottom:20vh;
     height:7vh;
     width:12vw;
+    min-width:40px;
 }
 .button:hover {
     background-color:#c7839c;
@@ -365,3 +357,104 @@ input {
     height:100%;
 }
 
+
+/*Media Queries gral*/
+@media (max-width:576px){
+    body {
+        min-height:300px;
+        min-width:100vw;
+    }
+    .navItem {
+        font-size: 0.4rem;
+        margin-left:4px;
+        margin-right:4px;
+        margin-bottom:5px;
+    }
+    .navItem:hover{
+        font-size:0.5rem;
+        color: #c7839c !important;    
+    }
+    .logo{
+        margin-top:20px;
+        font-size:1.2rem;
+    }
+    .claro {
+        min-height:80px;
+        padding-bottom:20px;
+        padding-top:10px;
+        min-width: 357.12px;
+    }
+    .oscuro {
+        min-height:80px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    footer {
+        min-height:80px;
+    }
+    body {
+        min-height:100vh;
+    }
+    .slogan {
+        font-size: 1.8rem;
+    }
+    .button {
+        font-size: 0.4rem;
+        margin-left: 2vh;
+        margin-right:2vh;
+        min-width:30px;
+    }
+}
+@media (min-width:576px) and (max-width:992px){
+    .navItem {
+        font-size:0.6rem;
+        margin-left:2px;
+        margin-right:2px;
+    }
+    .navItem:hover{
+        font-size:0.7rem;
+        color: #c7839c !important;
+    }
+    .logo{
+        font-size:2rem;
+    }
+    .claro {
+        min-height:80px;
+        padding-bottom:8px;
+    }
+    .oscuro {
+        min-height:80px;
+    }
+    footer {
+        min-height:80px;
+    }
+    body {
+        min-height:100vh;
+    }
+}
+@media (min-width:992px){
+    .navItem {
+        font-size:0.8rem;
+    }
+    .navItem:hover{
+        font-size:0.9rem;
+        color: #c7839c !important;
+    }
+    .logo{
+        font-size:2.5rem;
+    }
+    .claro {
+        min-height:80px;
+        padding-bottom:10px;
+    }
+    .oscuro {
+        min-height:80px;
+    }
+    footer {
+        min-height:80px;
+    }
+    body {
+        min-height:100vh;
+    }
+}
