@@ -15,9 +15,7 @@ html {
 }
 body {
 	position:relative;
-	min-height: 100vh;
-    max-width:100%;
-    width:100%;
+    width:auto;
     overflow-x:hidden;
 }
 /* ESTRUCTURA GRAL */
@@ -38,11 +36,21 @@ header {
     align-items:center;
     justify-content:space-evenly;
 }
+.hD {
+    height:45%;
+    width:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 .oscuro{
     height:20vh;
     width:100vw;
     background:#002B44;
     border-bottom: 5px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .logo{
     font-family: 'IBM Plex Serif', serif;
@@ -55,6 +63,7 @@ header {
     -1.5px 1.5px 0 #000,
     1.5px 1.5px 0 #000;
     text-decoration:none;
+    margin-top:8px;
 }
 .logo:hover{
     color:#e7e0cc;
@@ -96,27 +105,22 @@ main{
 }
 /*FOOTER GRAL*/
 .socialCont{
+    height:50%;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    padding-left: 35vw;
-    padding-right:35vw;
-}
-.social2{
-    height:8vh;
-    width:auto;
 }
 footer p{
+    height:50%;
     font-size:2vh;
     color: #e7e0cc;
     text-align:center;
-    margin-bottom:3vh;
-    margin-top:3vh;
     font-family: 'Recursive', sans-serif;
 }
 /*INDEX*/
 .indexGrid {
     display:grid;
+    grid-template-columns:100%;
     grid-template-rows: 80vh 100vh;
     grid-template-areas: "index"
                         "footer";
@@ -349,7 +353,9 @@ input {
 @media (max-width:576px){
     body {
         min-height:300px;
-        min-width:100vw;
+    }
+    .navConfig {
+        width:auto;
     }
     .navItem {
         font-size: 0.6rem;
@@ -361,30 +367,42 @@ input {
         color: #c7839c !important;    
     }
     .logo{
-        margin-top:20px;
-        font-size:1.5rem;
+        font-size:1.9rem;
     }
     .claro {
         min-height:85px;
         padding-bottom:20px;
         padding-top:10px;
-        min-width: 346px;
+        min-width: 325px;
     }
     .oscuro {
         min-height:85px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
     }
     footer {
-        min-height:85px;
+        min-height:90px;
+    }
+    .social2{
+        height:40px;
+        width:auto;
+        margin-right:15px;
+        margin-left:15px;
+    }
+    .socialCont{
+    margin: 0 35vw 50px 35vw;
+    }
+    footer p {
+        font-size:0.7rem;
+        margin: 8px 20px 20px 20px;
     }
 }
 @media (min-width:576px) and (max-width:992px){
+    .navConfig{
+        width:auto;
+    }
     .navItem {
         font-size:0.7rem;
-        margin-left:2px;
-        margin-right:2px;
+        margin-left:4px;
+        margin-right:4px;
     }
     .navItem:hover{
         font-size:0.8rem;
@@ -396,7 +414,7 @@ input {
     .claro {
         min-height:100px;
         padding-bottom:8px;
-        min-width:386px;
+        min-width:400px;
     }
     .oscuro {
         min-height:100px;
@@ -404,23 +422,39 @@ input {
     footer {
         min-height:80px;
     }
-    body {
-        min-height:100vh;
+    .social2{
+        height:60px;
+        width:auto;
+        margin-right:25px;
+        margin-left:25px;
+    }
+    .socialCont{
+    margin: 0 35vw 50px 35vw;
+    }
+    footer p {
+        font-size:0.9rem;
+        margin: 8px 20px 20px 20px;
     }
 }
 @media (min-width:992px){
+    .navConfig{
+        width:auto;
+    }
     .navItem {
         font-size:0.9rem;
+        margin-left: 4px;
+        margin-right: 4px;
     }
     .navItem:hover{
         font-size:1rem;
         color: #c7839c !important;
     }
     .logo{
-        font-size:3rem;
+        font-size:6vh;
     }
     .claro {
         min-height:120px;
+        min-width:730px;
         padding-bottom:10px;
     }
     .oscuro {
@@ -431,6 +465,19 @@ input {
     }
     body {
         min-height:100vh;
+    }
+    .social2{
+        height:80px;
+        width:auto;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .socialCont{
+    margin: 0 35vw 50px 35vw;
+    }
+    footer p {
+        font-size:0.7rem;
+        margin: 5px 20px 40px 20px;
     }
 }
 
