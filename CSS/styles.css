@@ -120,7 +120,6 @@ footer p{
 /*INDEX*/
 .indexGrid {
     display:grid;
-    grid-template-columns:100%;
     grid-template-rows: 80vh 100vh;
     grid-template-areas: "index"
                         "footer";
@@ -159,7 +158,6 @@ footer p{
     color:#c7839c;
     font-family: 'IBM Plex Serif', serif;
     letter-spacing: 0.2vw;
-    font-weight: 10vh;
     text-shadow:
     0 0 1.5px #000,
     -1.5px -1.5px 0 #000,  
@@ -450,7 +448,7 @@ input {
         color: #c7839c !important;
     }
     .logo{
-        font-size:6vh;
+        font-size:3.2rem;
     }
     .claro {
         min-height:120px;
@@ -476,7 +474,7 @@ input {
     margin: 0 35vw 50px 35vw;
     }
     footer p {
-        font-size:0.7rem;
+        font-size:1.2rem;
         margin: 5px 20px 40px 20px;
     }
 }
@@ -493,5 +491,16 @@ input {
 
 }
 @media (min-width:992px) {
-
+    .slogan {
+        font-size:2.8rem;
+        margin-top:15vh;
+    }
+    .button {
+        margin-top:5vh;
+        margin-bottom:20vh;
+        margin-left:40px;
+        margin-right:40px;
+        width:150px;
+        height:50px;
+    }
 }
