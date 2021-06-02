@@ -201,7 +201,7 @@ footer p{
     height:100vh;
     grid-area: footer;
     display:grid;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 45% 55%;
     grid-template-areas: "foot"
                         "footImg";
 }
@@ -209,15 +209,10 @@ footer p{
     grid-area:foot;
     background:#002b44;
     border-bottom: 5px solid black;
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
 }
 .footIndex p {
-    font-size:4vh;
     color:#e7e0cc;
     font-family: 'Recursive', sans-serif;
-    width:100%
 }
 .backgroundIndex {
     background-image: url(../media/footer.jpg);
@@ -225,13 +220,8 @@ footer p{
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items:center;
-}
-.social{
-    height: 15vh;
-    width:auto;
-    margin:2vw;
 }
 /* Contacto*/
 form{
@@ -440,8 +430,7 @@ input {
     }
     .navItem {
         font-size:0.9rem;
-        margin-left: 4px;
-        margin-right: 4px;
+        
     }
     .navItem:hover{
         font-size:1rem;
@@ -459,7 +448,7 @@ input {
         min-height:120px;
     }
     footer {
-        min-height:80px;
+        min-height:180px;
     }
     body {
         min-height:100vh;
@@ -481,13 +470,70 @@ input {
 
 /* Index Media-queries */
 @media (max-width:576px){
-    .slogan{
-
+    .slogan {
+        font-size:2.4rem;
+        margin-top:15vh;
     }
-    
+    .button {
+        margin-left:40px;
+        margin-right:40px;
+        width:150px;
+        height:50px;
+    }
+    .socInt{
+        margin:0;
+        font-size:1.6rem;
+        letter-spacing: 2px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .social{
+        height: 100px;
+        width:auto;
+        margin-left:35px;
+        margin-right:35px;
+    }
+    .indxFooter{
+        min-height:400px;
+    }
+    #heroButtons{
+        padding-bottom:15vh;
+    }
 }
 
 @media (min-width:576px) and (max-width:992px){
+    .slogan {
+        font-size:2.4rem;
+        margin-top:15vh;
+    }
+    .button {
+        font-size:0.7rem;
+        margin-left:20px;
+        margin-right:20px;
+        width:85px;
+        height:42.5px;
+    }
+    .socInt{
+        margin:0;
+        font-size:1.6rem;
+        letter-spacing: 2px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .social{
+        height: 100px;
+        width:auto;
+        margin-left:35px;
+        margin-right:35px;
+    }
+    .indxFooter{
+        min-height:400px;
+    }
+    #heroButtons{
+        padding-bottom:15vh;
+    }
 
 }
 @media (min-width:992px) {
@@ -496,11 +542,30 @@ input {
         margin-top:15vh;
     }
     .button {
-        margin-top:5vh;
-        margin-bottom:20vh;
+        font-size:0.9rem;
         margin-left:40px;
         margin-right:40px;
         width:150px;
         height:50px;
+    }
+    .socInt{
+        margin:0;
+        font-size:2.5rem;
+        letter-spacing: 2px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .social{
+        height: 150px;
+        width:auto;
+        margin-left: 80px;
+        margin-right:80px;
+    }
+    .indxFooter{
+        min-height:400px;
+    }
+    #heroButtons{
+        padding-bottom:15vh;
     }
 }
