@@ -1,3 +1,6 @@
+html {
+  font-size: 16px; }
+
 ::-webkit-scrollbar {
   display: none; }
 
@@ -6,12 +9,10 @@
   overflow: scroll;
   overflow-x: hidden; }
   .main-est .col__est-desc {
-    font-size: 1vw;
     font-family: 'Recursive', sans-serif;
     background-color: #e7e0cc;
-    text-align: center;
-    align-items: center;
-    padding: 10px; }
+    justify-content: center;
+    align-items: center; }
   .main-est .reglaH {
     border-bottom: 5px solid black;
     overflow: hidden; }
@@ -22,3 +23,16 @@
 img {
   height: 59.5vh;
   width: 100%; }
+
+/*Media Queries Estudios*/
+@media (max-width: 576px) {
+  .col__est-desc {
+    font-size: 0.7rem; } }
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .col__est-desc {
+    font-size: 0.9rem; } }
+
+@media (min-width: 992px) {
+  .col__est-desc {
+    font-size: 1.1rem; } }

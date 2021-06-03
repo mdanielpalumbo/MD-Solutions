@@ -49,31 +49,33 @@
     </header>
     <main>
         <form action="" method ="GET">
-            <section class = "user formCont">
+            <div class = "user formCont">
                 <label for="email">Escriba su email de contacto:</label>
                 <input type="email">
                 <label for="nombre">Escriba su nombre completo:</label>
                 <input type="text">
-            </section>
-            <section class = "tipo formCont">
+            </div>
+            <div class = "tipo formCont">
                 <label for="tipo">Indique que desea presupuestar:</label>
                 <select name="tipo" id="">
                     <option value="Presupuesto servicio">Presupuesto servicio</option>
                     <option value="Presupuesto estudio">Presupuesto estudio</option>
                 </select>
-            </section>
-            <section class = "textA formCont">
+            </div>
+            <div class = "textIn formCont">
                 <label for="consulta">Escriba su consulta:</label>
                 <textarea name="consulta" id="" cols="30" rows="10"></textarea>
-            </section>
-            <section class = "newsletter formCont">
-                <label for="checkbox">Desea subscribirse al newsletter?</label>
-                <input type="checkbox">
-            </section>
-            <section class = "formButtons formCont">
-                <input type="reset">
-                <input type="submit">
-            </section>
+            </div>
+            <div class = "newsletter formCont">
+                <label class="newsLabel">
+                    <p>Desea subscribirse al newsletter?</p>
+                    <input type="checkbox">
+                </label>
+            </div>
+            <div class = "formButtons formCont">
+                <input class="formButton" type="reset">
+                <input class="formButton" type="submit">
+            </div>
         </form>
     </main>
     <footer>

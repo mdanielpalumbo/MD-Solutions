@@ -78,7 +78,7 @@ header {
 .navItem {
     list-style: none;
     text-decoration:none;
-    color:white !important;
+    color:#e7e0cc !important;
     font-family: 'Recursive', sans-serif;
     font-weight: 300;
 }
@@ -102,6 +102,7 @@ main{
     width:100vw;
     background:#e7e0cc;
     height:60vh;
+    overflow-y:scroll;
 }
 /*FOOTER GRAL*/
 .socialCont{
@@ -133,6 +134,7 @@ footer p{
     grid-area: index;
     height:80vh;
     border-bottom:2.5px solid black;
+    overflow-y:auto;
 }
 #heroSlogan {
     height:50%;
@@ -225,57 +227,37 @@ footer p{
 }
 /* Contacto*/
 form{
+    padding-top:1vh;
+    width:30vw;
+    margin-left:35vw;
+    margin-right: 35vw;
     display:flex;
     flex-flow: column nowrap;
     justify-content:space-around;
-    align-items: center;
-    overflow:scroll;
-    padding-top: 1vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    width: auto;
 }
 .formCont{
-    margin-left: 1vw;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     color:black;
     font-family: 'Recursive', sans-serif;
-    font-size: 1.5vh;
-    width: 40vw;
 }
-label{
-    margin-bottom:0.5vh;
-    margin-top: 0.5vh;
+input, select, .formCont, label {
+    margin-bottom:1vh;
 }
-input {
-    margin-top:0.5vh;
-    margin-bottom:0.5vh;;
-}
-.newsletter{
+.newsLabel{
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content:space-between;
-    margin-top:0.5vh;
-    margin-bottom:0.5vh;
 }
-.newsletter input{
-    margin-top:0.9vh;
-}
-.formButtons{ 
+.formButtons{
     display:flex;
-    flex-direction: row;
-    justify-content:center;
-    padding:2vh;
+    align-items:center;
 }
-.formButtons input{
-    height: 2.5vh;
-    margin-left: 1vw;
-    margin-right:1vw;
-    font-size:1.3vh;
-    text-align:center;
-    padding:2px;
+.formButton {
+    width:20vw;
+    max-width:500px;
+    min-width:130px;
 }
 /*servicios*/
 .intro, .ai, .ac{
@@ -283,50 +265,78 @@ input {
     color:#002b44;
 }
 .intro {
-    margin-bottom: 5vh;
-    font-size:2vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight:600;
+    margin-bottom:4vh;
+    margin-left:3vw;
+    margin-right:3vw;
 }
 .intro h2{
-    font-size: 3.5vh;
-    margin-bottom: 2vh;
-    padding-top:2vh;
     font-weight:900;
+    margin-bottom:3vh;
 }
 .ai, .ac {
-    margin-bottom: 3vh;
-    text-align:center;
-    font-size: 1.7vh;
     font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom:4vh;
+    margin-left:8vw;
+    margin-right:8vw;
 }
 .ai p, .ac p {
-    margin-left: 15vw;
-    margin-right: 15vw;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight:600;
 }
 .ai h3, .ac h3 {
-    font-size:2.5vh;
-    margin-bottom: 1.5vh;
     font-weight:800;
+}
+.regla{
+    height:1.5vh;
+    border:2px solid black;
+    border-top:none;
+    border-radius:100px;
+}
+.large{
+    border-left:none;
+    border-right:none;
+    width:30vw;
+    margin-left:35vw;
+    margin-right:35vw;
+}
+.medium{
+    width:15vw;
+    margin-left:42.5vw;
+    margin-right:42.5vw;
+}
+.short{
+    width:7.5vw;
+    margin-left:46.5vw;
+    margin-right:46.5vw;
+    margin-bottom:4vh;
 }
 /* ENCONTRANOS */
 .map {
     position:absolute;
-    flex-flow:column nowrap;
+    display:flex;
     width:100vw;
     height:60vh;
+    justify-content:center;
+}
+.bckgFu{
+    position:absolute;
+    z-index:2;
+    width:400px;
+    height:80px;
+    background-color: gray;
+    opacity:80%;
+    border-radius:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .fu {
-    position:relative;
-    top: 0;
+    color:black;
     z-index:2;
     text-align:center;
-    font-size: 1.5vw;
-    padding-top: 0.8vh;
+    font-size: 1.2rem;
     font-weight:bold;
 }
 .map iframe {
@@ -336,7 +346,6 @@ input {
     width:100%;
     height:100%;
 }
-
 /*Media Queries gral*/
 @media (max-width:576px){
     body {
@@ -356,12 +365,12 @@ input {
     }
     .logo{
         font-size:1.9rem;
+        margin-bottom:2px;
     }
     .claro {
         min-height:85px;
-        padding-bottom:20px;
-        padding-top:10px;
-        min-width: 325px;
+        padding-bottom:6px;
+        min-width: 320px;
     }
     .oscuro {
         min-height:85px;
@@ -402,13 +411,13 @@ input {
     .claro {
         min-height:100px;
         padding-bottom:8px;
-        min-width:400px;
+        min-width:420px;
     }
     .oscuro {
         min-height:100px;
     }
     footer {
-        min-height:80px;
+        min-height:120px;
     }
     .social2{
         height:60px;
@@ -441,14 +450,13 @@ input {
     }
     .claro {
         min-height:120px;
-        min-width:730px;
-        padding-bottom:10px;
+        padding-bottom:8px;
     }
     .oscuro {
         min-height:120px;
     }
     footer {
-        min-height:180px;
+        min-height:160px;
     }
     body {
         min-height:100vh;
@@ -464,10 +472,9 @@ input {
     }
     footer p {
         font-size:1.2rem;
-        margin: 5px 20px 40px 20px;
+        margin: 10px 20px 20px 20px;
     }
 }
-
 /* Index Media-queries */
 @media (max-width:576px){
     .slogan {
@@ -503,7 +510,6 @@ input {
         padding-bottom:15vh;
     }
 }
-
 @media (min-width:576px) and (max-width:992px){
     .slogan {
         font-size:2.4rem;
@@ -536,7 +542,6 @@ input {
     #heroButtons{
         padding-bottom:15vh;
     }
-
 }
 @media (min-width:992px) {
     .slogan {
@@ -569,5 +574,93 @@ input {
     }
     #heroButtons{
         padding-bottom:15vh;
+    }
+}
+/*Servicios media queries*/
+@media (max-width:576px){
+    .intro {
+        padding-top:1.5vh;
+        font-size:0.7rem;
+    }
+    .intro h2{
+        font-size:0.8rem;
+    }
+    .ai, .ac {
+        font-size:0.6rem;
+    }
+    .ai h3, .ac h3 {
+        font-size:0.9rem;
+    }
+}
+@media (min-width:576px) and (max-width:992px){
+    .intro {
+        padding-top:1.5vh;
+        font-size:0.8rem;
+    }
+    .intro h2{
+        font-size:1rem;
+    }
+    .ai, .ac {
+        font-size:0.7rem;
+    }
+    .ai h3, .ac h3 {
+        font-size:0.9rem;
+    }
+}
+@media (min-width:992px){
+    .intro {
+        padding-top:1.5vh;
+        font-size:1.2rem;
+    }
+    .intro h2{
+        font-size:1.5rem;
+    }
+    .ai, .ac {
+        font-size:1rem;
+    }
+    .ai h3, .ac h3 {
+        font-size:1.2rem;
+    }
+}  
+/*Econtranos Media queries*/
+@media (max-width:576px){
+    .fu{
+        font-size: 0.8rem;
+    }
+    .bckgFu{
+        width:300px;
+        height:40px;
+        margin-top:2vh;
+    }
+}
+@media (min-width:576px) and (max-width:992px) {
+    .fu{
+        font-size: 1rem;
+    }
+    .bckgFu{
+        width:340px;
+        height:50px;
+        margin-top:2vh;
+    }
+}
+@media (min-width:992px) {
+    .fu{
+        font-size: 1.1rem;
+    }
+    .bckgFu{
+        width:360px;
+        height:60px;
+        margin-top:2vh;
+    }
+}
+/*Contacto Media queries*/
+@media (max-width:576px){
+    label, select, input, .formbutton{
+        font-size:0.8rem;
+    }
+}
+@media (min-width:576px) and (max-width:992px){
+    label, select,input,.formbutton{
+        font-size:0.9rem;
     }
 }
